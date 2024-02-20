@@ -38,6 +38,12 @@ def category_detail(request, id):
     serializer = serializers.ListProductSerializer(products, many=True)
     return Response(serializer.data)
 
+
+
+
+
+
+
 # @api_view(['POST'])
 # def salomlash(request):
 #     try:
@@ -54,7 +60,7 @@ def category_detail(request, id):
 #             }
 #         return Response(data, status=status.HTTP_400_BAD_REQUEST)
 
-
+                                                          
 
 # product:{
 # 'id':1,

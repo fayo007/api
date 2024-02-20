@@ -20,7 +20,20 @@ class DetailProductSerializer(serializers.ModelSerializer):
                   'category', 'review', 'is_discount', 
                   'is_active' ]
 
-class CategorySerializer(serializers.ModelSerializer):
+class ListCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Category
         fields = '__all__'
+
+
+class DetailCateogrySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Category
+        depth = 1
+        fields = ['id','name']
+        
+
+class WishListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model         
+    
